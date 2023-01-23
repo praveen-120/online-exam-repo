@@ -1,0 +1,16 @@
+<div class="form-group">
+    <h4 class="text-center">Java 8 Compiler </h4>
+      <label for="comment">Write your code here:</label>
+      <textarea class="form-control" rows="15" id="comment"></textarea>
+</div>
+<button class="btn btn-success m-3" (click)="isSaved=!isSaved">Save Code</button>
+<p *ngIf="isSaved">
+    Code saved successfully
+</p>
+<button class="btn btn-success m-3" (click)="isSubmitted=!isSubmitted">Submit</button>
+<p *ngIf="isSubmitted">
+    Code submitted successfully
+</p>
+<button (click)="endTest()"  class="btn btn-success m-3" >End Test</button>
+
+
